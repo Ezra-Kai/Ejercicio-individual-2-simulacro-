@@ -14,13 +14,21 @@
     <h2 class="mb-3">Formulario de Adopción de Mascotas 🐶🐱</h2>
     <p>Complete los datos para completar la adopción.</p>
     <form>
-      <div class="mb-3">
-        <label for="email">Mail del adoptante</label>
-        <input name="email" />
+        <div class="mb-3">
+        <label for="nombre">Nombre de la Mascota</label>
+        <input name="nombre" id="idNombre" required/>
       </div>
       <div class="mb-3">
-        <label>Peso</label>
-        <input id="weight" name="weight"/>
+        <label for="email">Mail del adoptante</label>
+        <input name="email" id="idEmail" required type="email"/>
+      </div>
+      <div class="mb-3">
+        <label>Peso (kg)</label>
+        <input id="idPeso" name="peso" required type="number" min="0"/>
+      </div>
+      <div class="mb-3">
+        <label>Está vacunado</label>
+        <input id="idVacunado" name="vacunado" required type="checkbox">
       </div>
 
       <div class="mb-3">
