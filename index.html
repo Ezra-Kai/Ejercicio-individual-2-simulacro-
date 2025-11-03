@@ -10,29 +10,29 @@
 </head>
 
 <body>
-  <div class="card mt-3">
+  <div class="card mt-3 mx-3 p-3">
     <h2 class="mb-3">Formulario de Adopción de Mascotas 🐶🐱</h2>
     <p>Complete los datos para completar la adopción.</p>
     <form>
         <div class="mb-3">
-        <label for="nombre">Nombre de la Mascota</label>
-        <input name="nombre" id="idNombre" required/>
+        <label for="nombre" class="form-label">Nombre de la Mascota</label>
+        <input name="nombre" id="idNombre" required class="form-control"/>
       </div>
       <div class="mb-3">
-        <label for="email">Mail del adoptante</label>
-        <input name="email" id="idEmail" required type="email"/>
+        <label for="email" class="form-label">Mail del adoptante</label>
+        <input name="email" id="idEmail" required type="email" class="form-control"/>
       </div>
       <div class="mb-3">
-        <label>Peso (kg)</label>
-        <input id="idPeso" name="peso" required type="number" min="0"/>
+        <label for="idPeso" class="form-label">Peso (kg)</label>
+        <input id="idPeso" name="peso" required type="number" min="0" class="form-control"/>
       </div>
       <div class="mb-3">
-        <label>Está vacunado</label>
+        <label for="idVacunado" class="form-label">Está vacunado</label>
         <input id="idVacunado" name="vacunado" required type="checkbox">
       </div>
 
       <div class="mb-3">
-        <button type="submit">Enviar</button>
+        <button type="submit" id="idSubmit" class="btn btn-secondary">Enviar</button>
       </div>
     </form>
 
